@@ -35,6 +35,10 @@ p {
     padding: 10px;
 }
 
+#hidden {
+    display: none;
+}
+
 
 #header {
     background-image: url(./images/header_background.jpg);
@@ -302,8 +306,17 @@ p {
 
 /* Devices with a screenwidth smaller than 1000px */
 @media only screen and (max-width: 1000px){
+    #hidden {
+        display: block;
+    }
+
+    .sidenav {
+        height: 300px;
+    }
+    
     .middle {
         grid-column: 1 / 4;
+        text-align: center;
     }
 
     #button {
@@ -413,6 +426,16 @@ p {
 
     #search_box {
         left: 42%;
+    }
+
+    #header {
+        background-color: #272727;
+        background-image: none;
+    }
+
+    body {
+        background-image: none;
+        background-color: #e6e6e6
     }
 
 }

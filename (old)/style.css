@@ -1,0 +1,362 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    color: #30343D;
+    line-height: 26px;
+    font-size: 16px;
+    /*min-height: 1000px;*/
+    background-image: url(./images/main_background.jpg);
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    min-height: 100%;
+    /* padding-bottom: 10px; */
+}
+
+input[type=text]{
+    width: 74%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+input[type=text]:focus {
+    color: #ff9f0c;
+}
+
+p {
+    padding: 10px;
+}
+
+
+#header {
+    background-image: url(./images/header_background.jpg);
+    height: 263px;
+    margin: 0;
+    background-position: center center;
+    background-size: cover;
+}
+
+#header_top {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    position: relative;
+    top: -80px;
+}
+
+
+#logo {
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 80px auto;
+}
+
+#logo:hover {
+    color: #ff9f0c;
+}
+
+#logo h1 {
+    font-weight: 300;
+    font-size: 36px;
+    font-family: "Bree Serif", serif;
+}
+
+#logo h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+#logo_wrapper {
+    position: relative;
+    top: 100px;
+    width: 70%;
+    margin: 80px auto;
+}
+
+#button {
+    position: relative;
+    /* padding-left: 20px; */
+    left: 44px;
+    top: -39px;
+    width: 80px;
+    color: black;
+    font-family: "Roboto Slab", sans-serif;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    z-index: 100;
+}
+
+#button:hover {
+    color: #ff9f0c;
+}
+
+#search_box {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    float: right; 
+    top: -155px;
+    border-left: 1px solid rgba(255,255,255,0.15);
+}
+
+#titlebar {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid rgba(128, 128, 128, 0.55);
+    border-top: 3px solid rgba(128, 128, 128, 0.55);
+    font-size: 32px;
+    background-image: url(./images/logo_vg.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: left;
+}
+
+#titlebar h2 {
+    position: relative;
+    text-align: center;
+    margin: 15px auto;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding-right: 16x;
+}
+
+#sidebar {
+    position: relative;
+    float: right;
+    right: 2%;
+    top: -200px;
+}
+
+
+.overlay {
+    /*background-color: rgba(5,5,7,0.7);*/
+    overflow: hidden;
+    height: 263px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.search_button_wrapper {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255,255,255,0.15);
+    float: right;
+    position: relative;
+}
+
+.article {
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    width: 45%;
+    min-height: 320px;
+    /* margin-bottom: 150px; */
+    background-color: white;
+    box-shadow: 9px 11px 20px 0 grey;
+}
+
+.post {
+    padding: 30px 20px;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.search-box-button {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.15)
+}
+
+.search-box-button:hover{
+    color: #ff9f0c;
+}
+
+.sidenav {
+    height: 250px;
+    background-color: #2f2f2f;
+    padding-top: 70px;
+    padding-bottom: 15px;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Roboto Slab", sans-serif;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ff9f0c;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    background-color: rgba(47, 47, 47, 0.77);
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    z-index: 3;
+    text-align: center;
+    margin-top: 40%;
+    border-bottom: 5px solid rgba(47, 47, 47, 0.77);
+    border-top: 5px solid rgba(47, 47, 47, 0.77);
+}
+
+.footer a {
+    color: #1692ff; 
+    font-size: 36px;
+    position: relative;
+    top: 25px;
+    text-decoration: none;
+    font-family: "Bree Serif", serif;
+}
+
+@media only screen and (max-width: 1500px) {
+    #sidebar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    #button {
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    #titlebar {
+        height: 90px;
+        background-image: none;
+    }
+
+    .article {
+        top: 120px;
+        width: 90%;
+        background-image: url("images/logo_transparent_vg_back.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .sidenav {
+        padding-top: 100px;
+    }
+
+    #search_box {
+        top: -155px;
+    }
+}
+
+
+@media only screen and (max-width: 750px){
+    #button {
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    #titlebar {
+        height: 90px;
+        background-image: none;
+    }
+
+    .article {
+        top: 120px;
+        left: 0;
+        width: 100%;
+        background-image: url("images/logo_transparent_vg_back.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .sidenav {
+        padding-top: 100px;
+    }
+
+    #search_box {
+        top: -155px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    #button {
+        top: 0;
+        font-size: 24px;
+    }
+
+    #titlebar {
+        height: 90px;
+        background-image: none;
+    }
+
+    .article {
+        top: 120px;
+        left: 0;
+        width: 100%;
+        background-image: url("images/logo_transparent_vg_back.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .sidenav {
+        padding-top: 100px;
+    }
+
+    #search_box {
+        top: -181px;
+    }
+
+    #header {
+        height: 200px;
+    }
+
+    #logo_wrapper {
+        top: 60px;
+    }
+}
